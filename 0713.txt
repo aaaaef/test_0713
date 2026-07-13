@@ -1,4 +1,4 @@
-7/13(월)
+07.13(월)
 git : 분산 변경관리 시스템
 특정 폴더에서 만들어진 변경사항을 모두 저장
 
@@ -20,8 +20,8 @@ remote-로컬 연결 및 관리법(1)
 1. git hub에 프로젝트 생성(완벽히 빈 프로젝트)
 **README 생성XX
 2. 로컬에서 git hub 프로젝트와 연결
-	:git remote "origin" https://github.com/aaaaef/test_0713.git
-	"origin"은 설정해줄 원격저장소 이름
+	:git remote add origin https://github.com/aaaaef/test_0713.git
+	origin은 설정해줄 원격저장소 이름
 3. 로컬 저장소 업로드
 	:git push origin master
 
@@ -42,6 +42,7 @@ remote-로컬 연결 및 관리법(1)
 3. github 에 추가 
   3-1 git remote add origin url
   3-2 (먼저 github에 프로젝트 만들고) git clone url
+  git init을 이미 했다면 더 이상 git clone 명령어를 쓰시면 안됨!!
 
 4. 원격 저장소에 올리기/받기
   업로드 : git push origin master
