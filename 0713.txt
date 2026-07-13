@@ -1,2 +1,52 @@
-ㅋㅋㅋㅋㅋㅋ
-오늘은 2026년 7월 13일 입니다.
+7/13(월)
+git : 분산 변경관리 시스템
+특정 폴더에서 만들어진 변경사항을 모두 저장
+
+1. git이 관리할 디렉토리 설정
+	:git init 명령어를 최상위 경로에서 작성
+
+2. 변경내용 저장하기
+	2.1 add 저장할 변경 내용 임시 저장(git add . -> 디렉토리 내에 있는 모든 파일 add)
+	2.2 commit 진짜 변경내용 저장
+
+
+** git 버전 관리**
+
+이전버전으로 가고싶을때
+	:git reset --hard "돌리고 싶은 위치의 git log"
+
+
+remote-로컬 연결 및 관리법(1)
+1. git hub에 프로젝트 생성(완벽히 빈 프로젝트)
+**README 생성XX
+2. 로컬에서 git hub 프로젝트와 연결
+	:git remote "origin" https://github.com/aaaaef/test_0713.git
+	"origin"은 설정해줄 원격저장소 이름
+3. 로컬 저장소 업로드
+	:git push origin master
+
+4. 집에서 복사하기
+	4.1 집에 기존 저장소가 없다 -->복사
+		:git clone https://github.com/aaaaef/test_0713.git
+	4.2 집에 기존 저장소가 있다 -->pull
+		:git pull origin master
+
+-------------------------------------------------------------
+1. 로컬 저장소 생성
+ git init
+
+2. 변경사항 추가 
+ git add .
+ git commit -m "메시지"
+
+3. github 에 추가 
+  3-1 git remote add origin url
+  3-2 (먼저 github에 프로젝트 만들고) git clone url
+
+4. 원격 저장소에 올리기/받기
+  업로드 : git push origin master
+  다운로드 : git pull origin master
+
+많이 쓰면서 확인하는 명령어
+ git status
+ git log --oneline
